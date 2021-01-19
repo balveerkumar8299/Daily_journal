@@ -1,7 +1,7 @@
 html {
   min-height: 100%;
   position: relative;
-}
+} 
 
 .container-fluid {
     padding-top: 70px;
@@ -15,14 +15,14 @@ html {
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 5px;
-}
+} 
 .navbar-nav  li a:hover {
     color: #1abc9c !important;
-}
+} 
 
-.footer-padding {
+ .footer-padding {
 	padding-bottom: 60px;
-}
+} 
 
 .footer {
 	position: absolute;
@@ -33,7 +33,7 @@ html {
 	background-color: #1abc9c;
 }
 
-.footer p {
+ .footer p {
 	margin-top: 25px;
 	font-size: 12px;
   color: #fff;
