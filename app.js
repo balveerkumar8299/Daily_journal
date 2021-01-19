@@ -73,7 +73,7 @@ app.get("/contact", function(req, res){
   res.render("contact", {contactContent: contactContent});
 });
 
-let port = process.env.port;
+let port = process.env.PORT;
 if(port==null || port==""){
   port=3000;
 }
