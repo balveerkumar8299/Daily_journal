@@ -1,17 +1,44 @@
 
 <%- include("partials/header"); -%>
 
-    <h1>Home</h1>
-    <p> <%= startingContent %> </p>
+ <div class="intro">
+  <h1>DAILY JOURNAL</h1>
+  <p> <%= startingContent %> </p>
+ </div>
+   
 
 
   <%  posts.forEach(function(post){ %>
 
-    <h1><%=post.title%></h1>
+    <div class="card" style="margin-top:10px; ">
+      <div class="card-header p-3 mb-2 bg-dark text-white">
+        <h1><a href="/posts/<%=post._id%>"> <%=post.title%>  </a></h1>
+      </div>
+      <div class="card-body" >
+        <blockquote class="blockquote mb-0">
+          <p>
+            <% if ( post.content.length> 440 ){ %>
+            <%=post.content.substring(0, 436) + " ..."%>
+          <a href="/posts/<%=post._id%>">Read More</a>
+          <% }else{ %>
+            <%=post.content%>
+            <%}%>
+          </p>
+        </blockquote>
+      </div>
+    </div>
+
+    
+    
+    
+    
+    
+    
+    <!-- <h1><%=post.title%></h1>
     <p>
     <%=post.content.substring(0, 100) + " ..."%>
     <a href="/posts/<%=post._id%>">Read More</a>
-    </p>
+    </p> -->
 
 
     <% }) %>

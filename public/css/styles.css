@@ -3,10 +3,21 @@ html {
   position: relative;
 } 
 
+.intro {
+  text-align: center;
+  font-family: 'raleway', sans-serif;
+}
+
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
 }
+
+#mybtn input{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -19,6 +30,15 @@ html {
 .navbar-nav  li a:hover {
     color: #1abc9c !important;
 } 
+
+
+.footer a {
+  color: #cd3f3e !important;
+}
+
+.footer a:hover {
+  color: #ff9c91 !important;
+}
 
  .footer-padding {
 	padding-bottom: 60px;
@@ -37,4 +57,22 @@ html {
 	margin-top: 25px;
 	font-size: 12px;
   color: #fff;
+}
+
+
+.dev{
+  margin-top: 10%;
+  text-align: center;
+
+}
+.mycard{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 10px 10px 10px;
+}
+.pic{
+  
+  width: 100%;
+  border-radius: 200px;
+  margin: auto auto auto auto;
 }

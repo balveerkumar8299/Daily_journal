@@ -4,7 +4,10 @@
 
     <h1><%=title%></h1>
     <p><%=content%></p>
-
+ 
+    <form action="/delete" method="POST">
+    <button type="submit" name="deletepost" value="<%=_id%>">DELETE</button>
+    </form>
 
 
 <%- include("partials/footer"); -%>
